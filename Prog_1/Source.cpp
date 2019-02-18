@@ -14,7 +14,7 @@ int main() {
 	while (ev <= akt) {
 		cout << ev << endl;
 		if (ev % 4 == 0) { cout << "\t Olimpiai ev!\n"; }
-		ev = ev + 1; // az ev +=1 is u.e.
+		ev = ev + 1; // az ev +=1 es ev++ (elobb utas utana no) es ++ev is u.e.
 	}
 	int sz;
 	cout << "Adjon meg egy szamot" << endl;

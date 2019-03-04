@@ -33,13 +33,13 @@ int main() {
 	cin >> x;
 	cin >> y;
 	r = sqrt(pow(x, 2) + pow(y, 2));
-	fi = asin(y / r) * (180/M_PI);
+	fi = asin(y / r) * (180/M_PI);		//szogben, radianban nem kell a szorzas
 	cout << "A pont polarkoordinatai: (" << r << ";" << fi << "ÿ)\n";
 	cout << "Adja meg a polarkoordinatakat! \n";
 	double r2, fi2, x2 , y2;
 	cin >> r2;
 	cin >> fi2;
-	fi2 = fi2 * (M_PI / 180);
+	fi2 = fi2 * M_PI/180;		//szogben, radianban nem kell
 	x2 = cos(fi2)*r2;
 	y2 = sin(fi2)*r2;
 	cout << "A pont koordinatai: (" << x2 << ";" << y2 << ")\n";

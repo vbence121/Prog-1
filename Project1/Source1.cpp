@@ -1,3 +1,4 @@
+#define _USE_MATH_DEFINES
 #include <iostream>
 #include <cmath>
 #define N 5
@@ -24,8 +25,23 @@ int main() {
 		atlelt += abs(atl - sz[i]);
 	}
 	szorasn = szorasn / N;
-	atlelt = atlelt / N;
+	atlelt /= N;
 	szoras = sqrt(szorasn);
-	cout << "A szorasnegyzet " << szorasn << endl << "A szoras " << szoras << endl << "Az atlagos abszolut elteres " << atlelt << endl;
+	cout << "A szorasnegyzet: " << szorasn << endl << "A szoras: " << szoras << endl << "Az atlagos abszolut elteres: " << atlelt << endl;
+	double x,y,r,fi;
+	cout << "Adja meg a koordinatakat! \n";
+	cin >> x;
+	cin >> y;
+	r = sqrt(pow(x, 2) + pow(y, 2));
+	fi = asin(y / r) * (180/M_PI);
+	cout << "A pont polarkoordinatai: (" << r << ";" << fi << "ÿ)\n";
+	cout << "Adja meg a polarkoordinatakat! \n";
+	double r2, fi2, x2 , y2;
+	cin >> r2;
+	cin >> fi2;
+	fi2 = fi2 * (M_PI / 180);
+	x2 = cos(fi2)*r2;
+	y2 = sin(fi2)*r2;
+	cout << "A pont koordinatai: (" << x2 << ";" << y2 << ")\n";
 	return 0;
 }

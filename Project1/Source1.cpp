@@ -4,9 +4,8 @@
 #define N 5
 using namespace std;
 
-void test() { cout << "Hello World"; }
-int main() {
-	int sz[N],i,ossz=0;
+void statisztika() {
+	int sz[N], i, ossz = 0;
 	cout << "Addja meg az " << N << "db szamot" << endl;
 	for (i = 0; i < N; i++) {
 		cin >> sz[i];
@@ -16,7 +15,7 @@ int main() {
 	// osszeg, atlag
 	double atl = (double)ossz / N;
 	cout << "Az osszeg : " << ossz << endl;
-	cout << "Az atlag : " << (double)ossz/N << endl;	// static_cast<double>(ossz) ugyan az csak rondabb
+	cout << "Az atlag : " << (double)ossz / N << endl;	// static_cast<double>(ossz) ugyan az csak rondabb
 
 	// szorasnegyzet, szoras, atlagos abszolut elteres
 	double szorasn = 0, szoras, atlelt = 0;
@@ -28,14 +27,18 @@ int main() {
 	atlelt /= N;
 	szoras = sqrt(szorasn);
 	cout << "A szorasnegyzet: " << szorasn << endl << "A szoras: " << szoras << endl << "Az atlagos abszolut elteres: " << atlelt << endl;
-	double x,y,r,fi;
+}
+void koord1() {
+	double x, y, r, fi;
 	cout << "Adja meg a koordinatakat! \n";
 	cin >> x;
 	cin >> y;
 	r = sqrt(pow(x, 2) + pow(y, 2));
-	fi = asin(y / r) * (180/M_PI);		//szogben, radianban nem kell a szorzas
+	fi = asin(y / r) * (180 / M_PI);		//szogben, radianban nem kell a szorzas
 	cout << "A pont polarkoordinatai: (" << r << ";" << fi << "ÿ)\n";
 	cout << "Adja meg a polarkoordinatakat! \n";
+}
+void koord2(){
 	double r2, fi2, x2 , y2;
 	cin >> r2;
 	cin >> fi2;
@@ -43,5 +46,4 @@ int main() {
 	x2 = cos(fi2)*r2;
 	y2 = sin(fi2)*r2;
 	cout << "A pont koordinatai: (" << x2 << ";" << y2 << ")\n";
-	return 0;
 }

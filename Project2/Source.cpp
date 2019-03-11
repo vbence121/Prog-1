@@ -79,16 +79,17 @@ string input() {
 }
 
 int main() {
-	cout << "Adja meg az elso rendszamot!" << endl;
+	cout << "Az elso rendszamot varom!" << endl;
 	string rendszam1 = input();
-	cout << "Adja meg az masodik rendszamot!" << endl;
+	cout << "A masodik rendszamot varom!" << endl;
 	string rendszam2 = input();
 	int i = 0, nagyobb = 0;
 	while (nagyobb == 0 && i < 7) {
 		if (rendszam1[i] > rendszam2[i]) nagyobb = 1;
 		if (rendszam1[i] < rendszam2[i]) nagyobb = 2;
+		i++;
 	}
 	if (nagyobb == 1) cout << "Az elso auto ujabb!" << endl;
 	else if (nagyobb == 2) cout << "Az masodik auto ujabb!" << endl;
-	else if (nagyobb == 0) cout << "A ket rendszam ugyan az" << endl;
+	else if (nagyobb == 0) cout << "A ket rendszam ugyan az!" << endl;
 }

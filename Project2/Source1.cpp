@@ -67,6 +67,11 @@ int main() {
 		char op;
 		cin >> A >> op >> B;
 		R = calc(A, B, op);
+		if (cin.fail()) {
+			cout << "Hibas kifejezes!\n" << endl;
+			cin.clear();
+			cin.ignore(10000, '\n');
+		}
 		if (MEG == false) return 0;
 		cout << A << op << B << '=' << R << endl;
 	}

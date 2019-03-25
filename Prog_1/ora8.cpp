@@ -97,7 +97,7 @@ int main() {
 	kiirVaros(varosok[Min(varosok, 5)]);
 
 	cout << "Varosok lakossag szerinti novekvo sorrendben: \n";
-	rendez(varosok, 5);
+	rendez(varosok, 5); 
 	kiirVarosok(varosok, 5);
 
 }

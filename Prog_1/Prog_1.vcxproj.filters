@@ -30,5 +30,8 @@
     <ClCompile Include="ora3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ora9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

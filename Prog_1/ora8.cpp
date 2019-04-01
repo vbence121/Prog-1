@@ -46,7 +46,7 @@ void csere(Varos* varosok, int a, int b) {
 
 // lakossag szam szerinti sorrendben rendez
 void rendez(Varos varosok[], int db) {
-	// bena rendezes
+	// gagyi rendezes
 	/*	for (int i = 0; i < db; i++) {
 			for (int j = 0; j < db; j++) {
 				if (varosok[j].lakossag < varosok[i].lakossag) csere(varosok, i, j);

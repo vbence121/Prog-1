@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// ket egesz valtozo cimet kapja parameterben es ha az elso nagyobb akkor felcsereli az ertekeket
 struct Ido {
 	int h, m, s;
 };
@@ -18,29 +19,26 @@ void tick(Ido* t){
 		t->h = 0;;
 	}
 }
-
+int maradekos(int osztando, int oszto, int* maradek) {
+	*maradek = osztando % oszto;
+	return osztando / oszto;
+}
 void btick(Ido* t, int sec) {
 	t->s += sec;
 	while (t->s >= 60) {
 		t->s -= 60;
 		t->m += 1;
 	}
-	int ora = maradekos(t->m , 60, &t->m);
+	int ora = maradekos(t->m, 60, &t->m);
 	t->h += ora;
 	maradekos(t->h, 24, &t->h);
 }
-
 void btickalt(Ido* t, int sec) {
 	for (int i = 0; i < sec; i++) {
 		tick(t);
 	}
 }
 
-int maradekos(int osztando, int oszto, int* maradek) {
-	*maradek = osztando % oszto;
-	return osztando / oszto;
-}
-// ket egesz valtozo cimet kapja parameterben es ha az elso nagyobb akkor felcsereli az ertekeket
 void sorbarak(int *a, int *b) {
 	if (*a > *b) {
 		int cs = *a;
@@ -95,5 +93,27 @@ int main() {
 */
 // dinamikus tomb/mem kezeles
 
+	int *p = new int;
+	*p = 41;
+	cout << *p << endl;
+	delete p;
+	//cout << *p << endl;
+	p = 0; // NULL pointer
+	p = NULL;
+	p = nullptr;
 
+	int meret;
+	cin >> meret;
+	//int tomb[meret];
+	int *tomb = new int[meret];
+	if (!tomb) {						// ( tomb == nullptr )
+		cout << "Nem sikerult lefoglalni";
+		return 1;
+	}
+	for (int i = 0; i < meret; i++) {
+		cin >> tomb[i];
+		buborek(tomb, meret);
+		cout << tomb[i] << " " << endl;
+	}
+	delete[] tomb;
 }

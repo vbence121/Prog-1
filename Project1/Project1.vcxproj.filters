@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="tanar">
+      <UniqueIdentifier>{c0033d17-c309-4148-85b4-ad50f44c3a0a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source1.cpp">
@@ -30,5 +33,30 @@
     <ClCompile Include="ora11.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ora11.1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="K:\GKNB_INTM021 - Programozás\osz\2019\1400\11Orarend\11Orarend\11Orarend.cpp">
+      <Filter>tanar</Filter>
+    </ClCompile>
+    <ClCompile Include="idopont.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tanora.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Text.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="idopont.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tanora.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

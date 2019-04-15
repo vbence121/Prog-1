@@ -1,0 +1,5 @@
+#!/bin/bash
+for i in "$1"/*."$2"  # ./script.sh $hely $kiterj $hova
+do
+	mv "$1"/"$2" "$3"/"$2"
+done

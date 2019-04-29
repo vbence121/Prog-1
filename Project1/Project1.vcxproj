@@ -118,10 +118,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="idopont.cpp" />
-    <ClCompile Include="K:\GKNB_INTM021 - Programozás\osz\2019\1400\11Orarend\11Orarend\11Orarend.cpp" />
-    <ClCompile Include="K:\GKNB_INTM021 - Programozás\osz\2019\1400\12ToDoList\12ToDoList\12ToDoList.cpp" />
-    <ClCompile Include="ora11.1.cpp" />
+    <ClCompile Include="idopont.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="K:\GKNB_INTM021 - Programozás\osz\2019\1400\11Orarend\11Orarend\11Orarend.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="K:\GKNB_INTM021 - Programozás\osz\2019\1400\12ToDoList\12ToDoList\12ToDoList.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="ora11.1.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="ora11.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -138,7 +146,9 @@
     <ClCompile Include="ora10.1.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="tanora.cpp" />
+    <ClCompile Include="tanora.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Text.txt" />

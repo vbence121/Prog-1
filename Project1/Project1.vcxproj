@@ -120,10 +120,12 @@
   <ItemGroup>
     <ClCompile Include="idopont.cpp" />
     <ClCompile Include="K:\GKNB_INTM021 - Programozás\osz\2019\1400\11Orarend\11Orarend\11Orarend.cpp" />
+    <ClCompile Include="K:\GKNB_INTM021 - Programozás\osz\2019\1400\12ToDoList\12ToDoList\12ToDoList.cpp" />
     <ClCompile Include="ora11.1.cpp" />
     <ClCompile Include="ora11.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="ora13.cpp" />
     <ClCompile Include="Source.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>

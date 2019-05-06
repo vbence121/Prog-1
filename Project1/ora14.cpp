@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int main () {
+int main() {
 
 	ifstream input;
 	input.open("runs.log");
@@ -14,9 +14,25 @@ int main () {
 		return -1;
 	}
 
-	string nev;
-	double tav;
-	input >> nev >> tav;
+	while (!input.eof()) {
 
-	cout << "Nev " << nev << " " << tav << " km/h";
+		string nev;
+		double tav;
+		input >> nev >> tav;
+		cout << "Nev " << nev << " " << tav << " km/h \n";
+
+	}
+	
+	input.close();
+
+	//enum Mod { read, write=4, append=7};
+
+	ofstream kimenet("runs.log", ios::app); // rogton meg is nyitja (hozzafuzesre)
+	if (!kimenet.is_open()) {
+			cout << "Nincs irasi jogosultsag a fajlhoz.\n";
+			return -2;
+	}
+
+	kimenet.close();
+	return 0;
 }

@@ -10,7 +10,7 @@ struct Run {
 	Run *bal, *jobb;
 };
 
-void addDist(Run* gyoker, string nev, double tav) {
+void addDist(Run* gyoker, const string &nev, const double& tav) {
 	if (gyoker->nev == nev) {
 		gyoker->tav += tav;
 		}

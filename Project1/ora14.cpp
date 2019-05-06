@@ -48,6 +48,14 @@ void kiir(Run* gy) {
 	}
 }
 
+void torol(Run* gy) {
+	if (gy) {
+		torol(gy->bal);
+		torol(gy->jobb);
+		delete gy;
+	}
+}
+
 int main(int argc, char** argv)
 {
 	if (argc != 2) {
@@ -128,6 +136,7 @@ int main(int argc, char** argv)
 		return -2;
 	}
 
+	torol(gyoker);
 	kimenet.close();
 	return 0;
 }

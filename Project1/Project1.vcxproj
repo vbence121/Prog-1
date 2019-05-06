@@ -151,6 +151,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <Text Include="runs.log" />
     <Text Include="Text.txt" />
   </ItemGroup>
   <ItemGroup>

@@ -126,15 +126,29 @@ int main(int argc, char** argv)
 		}
 	}
 	kiir(gyoker);
+
 	input.close();
-
-	//enum Mod { read, write=4, append=7 };
-
 	ofstream kimenet("runs.log", ios::app); // rogton meg is nyitja (hozzafuzesre)
 	if (!kimenet.is_open()) {
 		cout << "Nincs irasi jogosultsag a fajlhoz.\n";
 		return -2;
 	}
+
+	string nev;
+	double tav;
+	do {
+		cout << "Adjon meg uj adatot!\n";
+		cin >> nev;
+		if (nev != "exit") {
+			cin >> tav;
+			addDist(gyoker, nev, tav);
+			kimenet << endl << nev << ' ' << tav;
+			kiir(gyoker);
+		}
+	} while (nev != "exit");
+
+	//enum Mod { read, write=4, append=7 };
+
 
 	torol(gyoker);
 	kimenet.close();

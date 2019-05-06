@@ -56,6 +56,9 @@
     <Text Include="Text.txt">
       <Filter>Source Files</Filter>
     </Text>
+    <Text Include="runs.log">
+      <Filter>Source Files</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="idopont.h">
